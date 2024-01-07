@@ -6,7 +6,7 @@ import { promisify } from 'util';
 import execa from 'execa';
 import Listr from 'listr';
 import { spawn } from 'child_process';
-import { userSupport } from './help';
+import { userSupport } from "./help.js";
 
 const access = promisify(fs.access);
 const copy = promisify(ncp);
